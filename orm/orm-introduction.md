@@ -8,7 +8,7 @@ style: |
     background: #ffffff;
     color: #172554;
     padding: 48px 64px;
-    font-size: 1.16em;
+    font-size: 1.3em;
   }
   section.title {
     background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 100%);
@@ -31,12 +31,14 @@ style: |
   code {
     background: #eff6ff;
     color: #be123c;
+    font-size: 1em;
   }
   pre {
     background: #0f172a;
     color: #e2e8f0;
     border-radius: 8px;
     padding: 16px;
+    font-size: 1em;
   }
 ---
 
@@ -47,7 +49,7 @@ style: |
 
 ### Connecting code objects to database tables
 
-An introduction | About 5 minutes
+**Aymane Salmoune** |   **Fouad ESSARRAJ**
 
 ---
 
@@ -56,8 +58,9 @@ An introduction | About 5 minutes
 1. Why do we need ORMs?
 2. How do objects map to tables?
 3. ORM query vs. SQL
-4. Benefits and trade-offs
-5. Key takeaways
+4. A runnable mini example
+5. Benefits and trade-offs
+6. Key takeaways
 
 ---
 
@@ -85,19 +88,33 @@ Without an abstraction layer, developers have to connect these two representatio
 
 ## One request, two ways to write it
 
-Example: find active users.
+Example: find active users with SQLAlchemy.
 
 ```python
-User.objects.filter(active=True)
+select(User).where(User.active.is_(True))
 ```
 
-This Django query expresses the intent; the ORM handles access to the database.
+This SQLAlchemy statement expresses the intent; the ORM handles access to the database.
 
 ```sql
 SELECT * FROM user WHERE active = TRUE;
 ```
 
 *Simplified example: the table name and exact syntax depend on the model and database engine.*
+
+---
+
+## Try it yourself
+
+The runnable example uses **SQLAlchemy** with an in-memory **SQLite** database.
+
+```powershell
+cd orm/example
+python -m pip install -r requirements.txt
+python main.py
+```
+
+See [`example/README.md`](example/README.md) for virtual environment setup and details.
 
 ---
 
@@ -132,7 +149,6 @@ It simplifies common tasks, but **SQL and database fundamentals still matter**.
 
 ## Sources
 
-- Django — [Making queries](https://docs.djangoproject.com/en/6.1/topics/db/queries/)
 - SQLAlchemy — [ORM Quick Start](https://docs.sqlalchemy.org/en/20/orm/quickstart.html)
 - Microsoft — [Overview of Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/)
 

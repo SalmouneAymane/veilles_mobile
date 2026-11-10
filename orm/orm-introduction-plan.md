@@ -32,14 +32,14 @@ Start with the difference between the object-oriented world and relational table
 | 2 | Today’s Plan | What will the talk cover? | The talk moves from the problem to mapping, an example, trade-offs, and takeaways. | Five-item agenda |
 | 3 | Two Worlds to Connect | Why do we need one? | Code works with objects; a relational database stores rows and columns. | Object / table comparison |
 | 4 | Mapping in Practice | How are they connected? | Class → table, attribute → column, instance → row; relationships represent links between data. | Mapping diagram |
-| 5 | One Request, Two Ways to Write It | What does the ORM do? | An ORM query expresses an intent that can also be written in SQL. | Django example and equivalent SQL query |
-| 6 | Useful, but Not Magic | What are the trade-offs? | ORMs reduce repetitive code but do not eliminate SQL or performance concerns. | Benefits, caveats, and ORM examples |
-| 7 | Key Takeaways | What should the audience remember? | An ORM is a convenience layer over the database, not a substitute for understanding it. | Summary and questions |
-| 8 | Sources | Where can the audience learn more? | The examples and explanations are based on official documentation. | Django, SQLAlchemy, and Entity Framework Core links |
+| 5 | One Request, Two Ways to Write It | What does the ORM do? | An ORM query expresses an intent that can also be written in SQL. | SQLAlchemy example and equivalent SQL query |
+| 6 | Try It Yourself | Can I see it run? | A small SQLAlchemy script maps a Python class to an SQLite table and queries it. | Run `example/main.py` |
+| 7 | Useful, but Not Magic | What are the trade-offs? | ORMs reduce repetitive code but do not eliminate SQL or performance concerns. | Benefits, caveats, and ORM examples |
+| 8 | Key Takeaways | What should the audience remember? | An ORM is a convenience layer over the database, not a substitute for understanding it. | Summary and questions |
+| 9 | Sources | Where can the audience learn more? | The examples and explanations are based on official documentation. | SQLAlchemy and Entity Framework Core links |
 
 ## Verified sources
 
-- Django Software Foundation, “Making queries,” https://docs.djangoproject.com/en/6.1/topics/db/queries/ — accessed November 10, 2026.
 - SQLAlchemy, “ORM Quick Start,” https://docs.sqlalchemy.org/en/20/orm/quickstart.html — accessed November 10, 2026.
 - Microsoft, “Overview of Entity Framework Core,” https://learn.microsoft.com/en-us/ef/core/ — accessed November 10, 2026.
 
@@ -47,4 +47,4 @@ Start with the difference between the object-oriented world and relational table
 
 - **Visual direction:** Blue and white, large text, simple diagrams, following the provided Marp example.
 - **Pacing:** About 35 to 45 seconds per slide.
-- **Before presenting:** No statistics, prices, or comparative rankings are included; the code example assumes a Django `User` model with an `active` field.
+- **Before presenting:** No statistics, prices, or comparative rankings are included; the live example is in `example/`.
