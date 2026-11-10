@@ -29,12 +29,13 @@ Start with the difference between the object-oriented world and relational table
 | # | Title | Question / purpose | Main message | Example or visual |
 |---|---|---|---|---|
 | 1 | ORMs: From Objects to Tables | What is this talk about? | An ORM connects object-oriented code to a relational database. | Title and subtitle |
-| 2 | Two Worlds to Connect | Why do we need one? | Code works with objects; a relational database stores rows and columns. | Object / table comparison |
-| 3 | Mapping in Practice | How are they connected? | Class → table, attribute → column, instance → row; relationships represent links between data. | Mapping diagram |
-| 4 | One Request, Two Ways to Write It | What does the ORM do? | An ORM query expresses an intent that can also be written in SQL. | Django example and equivalent SQL query |
-| 5 | Useful, but Not Magic | What are the trade-offs? | ORMs reduce repetitive code but do not eliminate SQL or performance concerns. | Benefits, caveats, and ORM examples |
-| 6 | Key Takeaways | What should the audience remember? | An ORM is a convenience layer over the database, not a substitute for understanding it. | Summary and questions |
-| 7 | Sources | Where can the audience learn more? | The examples and explanations are based on official documentation. | Django, SQLAlchemy, and Entity Framework Core links |
+| 2 | Today’s Plan | What will the talk cover? | The talk moves from the problem to mapping, an example, trade-offs, and takeaways. | Five-item agenda |
+| 3 | Two Worlds to Connect | Why do we need one? | Code works with objects; a relational database stores rows and columns. | Object / table comparison |
+| 4 | Mapping in Practice | How are they connected? | Class → table, attribute → column, instance → row; relationships represent links between data. | Mapping diagram |
+| 5 | One Request, Two Ways to Write It | What does the ORM do? | An ORM query expresses an intent that can also be written in SQL. | Django example and equivalent SQL query |
+| 6 | Useful, but Not Magic | What are the trade-offs? | ORMs reduce repetitive code but do not eliminate SQL or performance concerns. | Benefits, caveats, and ORM examples |
+| 7 | Key Takeaways | What should the audience remember? | An ORM is a convenience layer over the database, not a substitute for understanding it. | Summary and questions |
+| 8 | Sources | Where can the audience learn more? | The examples and explanations are based on official documentation. | Django, SQLAlchemy, and Entity Framework Core links |
 
 ## Verified sources
 
@@ -45,5 +46,5 @@ Start with the difference between the object-oriented world and relational table
 ## Production notes
 
 - **Visual direction:** Blue and white, large text, simple diagrams, following the provided Marp example.
-- **Pacing:** About 40 to 55 seconds per slide.
+- **Pacing:** About 35 to 45 seconds per slide.
 - **Before presenting:** No statistics, prices, or comparative rankings are included; the code example assumes a Django `User` model with an `active` field.

@@ -8,7 +8,7 @@ style: |
     background: #ffffff;
     color: #172554;
     padding: 48px 64px;
-    font-size: 1.08em;
+    font-size: 1.16em;
   }
   section.title {
     background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 100%);
@@ -48,6 +48,16 @@ style: |
 ### Connecting code objects to database tables
 
 An introduction | About 5 minutes
+
+---
+
+## Today’s plan
+
+1. Why do we need ORMs?
+2. How do objects map to tables?
+3. ORM query vs. SQL
+4. Benefits and trade-offs
+5. Key takeaways
 
 ---
 
